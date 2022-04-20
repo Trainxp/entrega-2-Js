@@ -1,0 +1,107 @@
+
+
+/* diseño grid  */
+
+
+.gridNosotros{  display: grid;
+min-height: 150vh;
+grid-template-areas:
+"HNOS "
+"mainNOS    "
+"footerNOS " ;
+grid-template-rows: 280px 70% auto ;
+grid-template-columns: 100%;
+
+} 
+
+
+.headerNosotros{
+    grid-area: HNOS;
+    margin-top: 6em;
+    margin-bottom: -1em;
+    z-index: 2;
+    
+}
+
+
+.mainNosotros{
+    margin: auto ;
+    width:90%;
+    padding: 1em;
+
+
+    .nososTitulo{
+        margin-top: 1em;
+        margin-left: 0.5em;
+        font-family: 'Hammersmith One', sans-serif;
+        font-size: 1.3em;
+        border-bottom: 5px solid white;
+    }
+
+    grid-area: mainNOS;
+
+
+    .seccionNosotros{
+        display: flex;
+
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90% ;
+        min-width: 300px;
+        padding: 1em;
+        margin:  auto ;
+                .cajaNosotros{
+                    margin: auto;
+                      width: 600px;
+                      
+                      align-self: center;
+                      
+
+                          .nosotros {
+                              background-color: rgb(194, 235, 221);
+                              border-radius: 15px;
+                              padding: 12px;
+                              border-top: 5px solid black;
+                              border-bottom:5px solid black ;
+                              
+
+                              max-width: 100%;
+                              min-width: 10%;
+    
+                        margin: auto;
+                        font-family: 'Bebas Neue', cursive;
+                        font-size: 2em;
+                       
+                    
+                    }
+                      
+                }
+               .cajaImgnos{
+                   h2{
+                    font-family: 'Bebas Neue', cursive;
+                    font-family: 'Caveat', cursive;
+                    font-family: 'Hammersmith One', sans-serif;;
+                   }
+                   padding: 1em;
+                   width: 600px;
+                    img{width: 100%;
+                       
+                       border-radius: 15px;
+                        margin: auto;
+                    padding: 0.6em;}
+               }
+
+    }
+}
+
+
+
+
+.footerNosotros{
+    grid-area:footerNOS ;
+}
+
+
+/* texto de la pagina "sobre nosotros" */
+
+

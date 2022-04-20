@@ -1,0 +1,97 @@
+
+/*estilos de envios*/ 
+
+
+.enviosGrid{  display: grid;
+    min-height: 150vh;
+    grid-template-areas:
+    "Henv "
+      "esp    "
+    "mainEnv    "
+    "footerEnv " ;
+    grid-template-columns:100% ;
+    grid-template-rows: 300px 50px  70% auto ;
+    
+    } 
+
+.headerEnvios{
+    margin-top: 3em;
+    grid-area: Henv;
+    z-index: 2;
+}
+
+
+
+.mainEnvios{
+    grid-area: mainEnv;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width: 90% ; 
+    padding: 1em ; margin: auto;
+    min-height: 800px;
+    margin-top: 1em;
+            h2{
+                margin-bottom: 1em;
+            }
+
+            .abajo{ margin-top: 8em;}
+
+}
+
+
+
+
+.divtabla{
+    width: 600px;
+        table{
+            width: 100%;
+            background-color: white;
+            text-align: left;
+            border-collapse:collapse ;
+
+                thead{background-color: #246455;
+                color: white;
+                border-bottom: solid 5px #0f362d ;}
+
+                tr:nth-child(even){
+                    background-color: #ddd;&:hover td{
+                        background-color: #369681;
+                        color:white;
+                    }
+                }
+                
+                th,td{
+                    
+                    padding: 15px;
+                    
+                }
+        }
+
+}
+
+
+#cajayou{
+    width: 600px;
+}
+
+
+
+.hola{
+     width: 100%;
+    margin:auto;
+            .responsiveYoutube{
+            border: 3p solid blue;
+            height: 0px;
+            padding-bottom: 56.25%;
+            position: relative;
+                    iframe{position: absolute;
+                    height: 100%;
+                    width: 100%;}
+        }
+}
+
+
+.footerEnvios{
+   grid-area:  footerEnv;
+}

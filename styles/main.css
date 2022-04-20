@@ -1,0 +1,512 @@
+@charset "UTF-8";
+.tk {
+  position: absolute;
+  background-color: #3749ac;
+  margin-top: 200px;
+  margin-left: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-style: groove;
+  font-family: 'Bebas Neue', cursive; }
+
+footer {
+  margin-left: 0.5em;
+  background-color: #0dc2ff;
+  max-height: 7em; }
+  footer p {
+    font-size: 0.8rem; }
+  footer .letraFooter {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem; }
+  footer .letraFooter2 {
+    font-family: 'Bebas Neue', cursive; }
+
+/*estilos de index+ productos    */
+/*estilos de envios*/
+.enviosGrid {
+  display: grid;
+  min-height: 150vh;
+  grid-template-areas: "Henv " "esp    " "mainEnv    " "footerEnv ";
+  grid-template-columns: 100%;
+  grid-template-rows: 300px 50px  70% auto; }
+
+.headerEnvios {
+  margin-top: 3em;
+  grid-area: Henv;
+  z-index: 2; }
+
+.mainEnvios {
+  grid-area: mainEnv;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  padding: 1em;
+  margin: auto;
+  min-height: 800px;
+  margin-top: 1em; }
+  .mainEnvios h2 {
+    margin-bottom: 1em; }
+  .mainEnvios .abajo {
+    margin-top: 8em; }
+
+.divtabla {
+  width: 600px; }
+  .divtabla table {
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse; }
+    .divtabla table thead {
+      background-color: #246455;
+      color: white;
+      border-bottom: solid 5px #0f362d; }
+    .divtabla table tr:nth-child(even) {
+      background-color: #ddd; }
+      .divtabla table tr:nth-child(even):hover td {
+        background-color: #369681;
+        color: white; }
+    .divtabla table th, .divtabla table td {
+      padding: 15px; }
+
+#cajayou {
+  width: 600px; }
+
+.hola {
+  width: 100%;
+  margin: auto; }
+  .hola .responsiveYoutube {
+    border: 3p solid blue;
+    height: 0px;
+    padding-bottom: 56.25%;
+    position: relative; }
+    .hola .responsiveYoutube iframe {
+      position: absolute;
+      height: 100%;
+      width: 100%; }
+
+.footerEnvios {
+  grid-area: footerEnv; }
+
+/*diseño Grid*/
+.contactoGrid {
+  display: Grid;
+  min-height: 150vh;
+  grid-template-areas: "HCON " "mainCON    " "footerCON ";
+  grid-template-rows: 400px 70% auto;
+  grid-template-columns: 100%; }
+
+.contactoHeader {
+  grid-area: HCON;
+  margin-top: 3EM;
+  z-index: 2; }
+
+/*estilo de pagina contactos */
+.contactoMain {
+  grid-area: mainCON;
+  margin: auto;
+  height: 950px;
+  width: 95%;
+  margin-top: -0.1em;
+  padding: 0.2em; }
+  .contactoMain .flexcontactos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    padding: 1em;
+    margin: auto; }
+    .contactoMain .flexcontactos .divform {
+      width: 600px; }
+      .contactoMain .flexcontactos .divform form fieldset {
+        display: inline;
+        border-radius: 10px;
+        background-color: white;
+        width: 100%;
+        padding: 15px; }
+        .contactoMain .flexcontactos .divform form fieldset .saltoDePaginaForm {
+          display: block; }
+        .contactoMain .flexcontactos .divform form fieldset div input {
+          background-color: aqua; }
+        .contactoMain .flexcontactos .divform form fieldset div label, .contactoMain .flexcontactos .divform form fieldset div input {
+          padding: 15px;
+          font-size: 1.5em;
+          border-radius: 10px; }
+    .contactoMain .flexcontactos .divmapa {
+      width: 600px; }
+
+.contactoFooter {
+  grid-area: footerCON; }
+
+/* diseño grid  */
+.gridNosotros {
+  display: grid;
+  min-height: 150vh;
+  grid-template-areas: "HNOS " "mainNOS    " "footerNOS ";
+  grid-template-rows: 280px 70% auto;
+  grid-template-columns: 100%; }
+
+.headerNosotros {
+  grid-area: HNOS;
+  margin-top: 6em;
+  margin-bottom: -1em;
+  z-index: 2; }
+
+.mainNosotros {
+  margin: auto;
+  width: 90%;
+  padding: 1em;
+  grid-area: mainNOS; }
+  .mainNosotros .nososTitulo {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 1.3em;
+    border-bottom: 5px solid white; }
+  .mainNosotros .seccionNosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    min-width: 300px;
+    padding: 1em;
+    margin: auto; }
+    .mainNosotros .seccionNosotros .cajaNosotros {
+      margin: auto;
+      width: 600px;
+      align-self: center; }
+      .mainNosotros .seccionNosotros .cajaNosotros .nosotros {
+        background-color: #c2ebdd;
+        border-radius: 15px;
+        padding: 12px;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+        max-width: 100%;
+        min-width: 10%;
+        margin: auto;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2em; }
+    .mainNosotros .seccionNosotros .cajaImgnos {
+      padding: 1em;
+      width: 600px; }
+      .mainNosotros .seccionNosotros .cajaImgnos h2 {
+        font-family: 'Bebas Neue', cursive;
+        font-family: 'Caveat', cursive;
+        font-family: 'Hammersmith One', sans-serif; }
+      .mainNosotros .seccionNosotros .cajaImgnos img {
+        width: 100%;
+        border-radius: 15px;
+        margin: auto;
+        padding: 0.6em; }
+
+.footerNosotros {
+  grid-area: footerNOS; }
+
+/* texto de la pagina "sobre nosotros" */
+#boton-carrito {
+  border: none;
+  color: royalblue;
+  font-size: 40px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px 20px;
+  transition: all .3s; }
+
+#boton-carrito:hover {
+  cursor: pointer;
+  color: white;
+  background-color: royalblue; }
+
+#boton-carrito:focus {
+  outline: none; }
+
+#contenedor-productos {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.producto {
+  max-width: 14.1em;
+  max-height: 24em;
+  padding: 5px;
+  margin: 8px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3); }
+  .producto img {
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid black; }
+  .producto p {
+    line-height: 1.5;
+    font-weight: 500; }
+
+.precioProducto {
+  font-weight: 700; }
+
+.boton-agregar {
+  background-color: royalblue;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 4px;
+  border: none;
+  border-radius: 5px; }
+
+.boton-agregar:hover {
+  cursor: pointer; }
+
+.boton-agregar:focus {
+  outline: none; }
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  opacity: 0;
+  visibility: hidden; }
+
+.modal-active {
+  opacity: 1;
+  visibility: visible; }
+
+.modal-carrito {
+  position: relative;
+  background-color: white;
+  min-width: 500px;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all .5s; }
+
+.modal-active .modal-carrito {
+  margin-top: 0; }
+
+.modal-carrito h3 {
+  color: royalblue;
+  padding-bottom: 5px; }
+
+.modal-carrito #carritoCerrar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: royalblue;
+  border: none;
+  background-color: white; }
+
+.modal-carrito #carritoCerrar:hover {
+  cursor: pointer; }
+
+.modal-carrito #carritoCerrar:focus {
+  outline: none; }
+
+.modal-carrito .precioProducto {
+  padding-top: 10px; }
+
+.productoEnCarrito {
+  border-left: 5px solid lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between; }
+
+.productoEnCarrito:hover {
+  border-left: 5px solid royalblue; }
+
+.boton-eliminar {
+  background-color: white;
+  color: red;
+  border: none;
+  font-size: 20px; }
+
+.boton-eliminar:hover {
+  cursor: pointer; }
+
+.boton-eliminar:focus {
+  outline: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  * body::-webkit-scrollbar {
+    width: 15px; }
+  * body::-webkit-scrollbar-thumb {
+    background: rgba(204, 0, 255, 0.705);
+    border-radius: 15px; }
+
+.indexProductGrid {
+  display: grid;
+  min-height: 150vh;
+  grid-template-areas: "header " "main    " "footer ";
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 40% 20%;
+  align-items: center;
+  align-content: space-around; }
+  .indexProductGrid header {
+    grid-area: header;
+    z-index: 2; }
+  .indexProductGrid main {
+    grid-area: main;
+    background-color: rgba(220, 221, 207, 0.651); }
+  .indexProductGrid footer {
+    grid-area: footer;
+    margin-top: 3em;
+    margin-left: 0.5em;
+    background-color: #0dc2ff;
+    max-height: 8em; }
+    .indexProductGrid footer .letraFooter {
+      font-family: 'Bebas Neue', cursive; }
+
+/* menu horizantal */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: darkblue;
+  width: 100%;
+  height: 80px;
+  align-items: center; }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap; }
+    nav ul li {
+      display: inline-block;
+      margin: 15px;
+      font-size: 25px; }
+      nav ul li a {
+        text-decoration: none;
+        font-family: 'Bebas Neue', cursive;
+        color: #420fb8;
+        background-color: #29a56b;
+        border-radius: 10px;
+        padding: 15px;
+        transition: .7s; }
+        nav ul li a:hover {
+          color: red;
+          transform: scale(1.8); }
+
+/* mensaje lateral izquierdo en index */
+.tk {
+  width: 110px;
+  color: white; }
+
+/* h1 correspondiente a todas las paginas */
+h1 {
+  font-family: 'Bebas Neue', cursive !important;
+  margin-left: 5px;
+  font-size: 45px; }
+
+/* imagen principal de index */
+.compu {
+  border-radius: 15px;
+  width: 90%;
+  margin-top: 100px;
+  margin-left: 5em;
+  margin-right: 4em; }
+
+/*estilos de box de la pagina productos
+*/
+.headerProduct {
+  margin-top: 2.5em;
+  margin-bottom: 9em; }
+
+.mainProduct {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.footerProduc {
+  margin-top: 1em; }
+
+/* contenedor padre e hijos de la pagina "productos" */
+.conteinerProducts {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: fit-content; }
+  .conteinerProducts .caja {
+    border: 5px solid #ddd8d8;
+    width: 280px;
+    height: 280px;
+    background-color: blue;
+    margin: 10px;
+    padding: 0.3rem;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 30px; }
+    .conteinerProducts .caja:hover {
+      box-shadow: #d302d3 1px 1px 2px 2px;
+      color: #d302d3;
+      transform: scale(1.05, 1.05); }
+    .conteinerProducts .caja .imgProduc {
+      border-radius: 1em;
+      margin: auto;
+      margin-bottom: 0.5em;
+      display: block;
+      width: 5em; }
+
+main {
+  background-color: rgba(206, 223, 179, 0.849); }
+
+/* media queries para movil */
+@media screen and (max-width: 814px) {
+  .headerGrid {
+    margin-top: 6em; }
+  header {
+    margin-left: .5em; }
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 310px;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 0px; }
+  nav ul li {
+    margin-left: 7em;
+    padding: 19px;
+    width: 500px;
+    height: 20px; }
+  main {
+    margin-top: 1em; }
+  a {
+    font-size: 1em; }
+  ul {
+    padding: 15px; }
+  .compu {
+    margin: auto;
+    width: 90%; }
+  .footerGrid {
+    margin-top: -20em;
+    margin-left: 1px;
+    width: 100%;
+    max-height: 7em; }
+  .mainproduct {
+    margin-top: 8em;
+    margin-bottom: 9em; }
+  .footerProduc {
+    margin-top: 1em; }
+  .headerProduct {
+    margin-top: -3em;
+    margin-bottom: 30em; } }
+
+.mainNosotros {
+  margin-top: 11em;
+  margin-bottom: 2em;
+  align-content: center;
+  justify-content: center; }
+
+.enviosGrid {
+  display: gridnone; }
